@@ -5,6 +5,26 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneticBot", "PhoneticBot\PhoneticBot.csproj", "{301924F3-30A7-426A-AC66-C7C455702CDD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{262F6BCD-3BBA-4038-A2D9-059E1CAD557B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExistingResourceGroup", "ExistingResourceGroup", "{4991D584-03F6-4FB2-A9BA-3C254442623B}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Templates\DeployUseExistResourceGroup\parameters-for-template-AzureBot-with-rg.json = Deployment\Templates\DeployUseExistResourceGroup\parameters-for-template-AzureBot-with-rg.json
+		Deployment\Templates\DeployUseExistResourceGroup\parameters-for-template-BotApp-with-rg.json = Deployment\Templates\DeployUseExistResourceGroup\parameters-for-template-BotApp-with-rg.json
+		Deployment\Templates\DeployUseExistResourceGroup\readme.md = Deployment\Templates\DeployUseExistResourceGroup\readme.md
+		Deployment\Templates\DeployUseExistResourceGroup\template-AzureBot-with-rg.json = Deployment\Templates\DeployUseExistResourceGroup\template-AzureBot-with-rg.json
+		Deployment\Templates\DeployUseExistResourceGroup\template-BotApp-with-rg.json = Deployment\Templates\DeployUseExistResourceGroup\template-BotApp-with-rg.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewResourceGroup", "NewResourceGroup", "{B59E17C2-8FF4-4296-8614-C76FF4D2203A}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Templates\DeployWithNewResourceGroup\parameters-for-template-AzureBot-new-rg.json = Deployment\Templates\DeployWithNewResourceGroup\parameters-for-template-AzureBot-new-rg.json
+		Deployment\Templates\DeployWithNewResourceGroup\parameters-for-template-BotApp-new-rg.json = Deployment\Templates\DeployWithNewResourceGroup\parameters-for-template-BotApp-new-rg.json
+		Deployment\Templates\DeployWithNewResourceGroup\readme.md = Deployment\Templates\DeployWithNewResourceGroup\readme.md
+		Deployment\Templates\DeployWithNewResourceGroup\template-AzureBot-new-rg.json = Deployment\Templates\DeployWithNewResourceGroup\template-AzureBot-new-rg.json
+		Deployment\Templates\DeployWithNewResourceGroup\template-BotApp-new-rg.json = Deployment\Templates\DeployWithNewResourceGroup\template-BotApp-new-rg.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,5 +41,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8919A9FA-35E0-4F2B-A2CA-F2D44CF01FB0}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4991D584-03F6-4FB2-A9BA-3C254442623B} = {262F6BCD-3BBA-4038-A2D9-059E1CAD557B}
+		{B59E17C2-8FF4-4296-8614-C76FF4D2203A} = {262F6BCD-3BBA-4038-A2D9-059E1CAD557B}
 	EndGlobalSection
 EndGlobal

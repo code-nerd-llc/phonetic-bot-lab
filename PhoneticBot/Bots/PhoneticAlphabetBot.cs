@@ -14,7 +14,6 @@ public class PhoneticAlphabetBot : ActivityHandler
         CancellationToken cancellationToken)
     {
         var inputText = turnContext.Activity.Text.ToLower();
-        // Phonetic alphabet dictionary
         var phoneticAlphabet = new Dictionary<char, string>
         {
             { 'a', "alpha" }, { 'b', "bravo" }, { 'c', "charlie" }, { 'd', "delta" },
@@ -46,6 +45,7 @@ public class PhoneticAlphabetBot : ActivityHandler
         ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
     {
         const string welcomeText = "Hello and welcome! This bot translates your messages into the phonetic alphabet.";
+
         foreach (var member in membersAdded)
         {
             if (member.Id != turnContext.Activity.Recipient.Id)
